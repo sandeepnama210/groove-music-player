@@ -1,0 +1,190 @@
+/* Border, Margin, Padding */
+.border {
+    border: 2px solid red;
+    margin: 3px;
+}
+
+.m-1 {
+    margin: 5px;
+}
+.p-1 {
+    padding: 10px;
+}
+
+/* New padding utilities */
+.p-2 {
+    padding: 20px;
+}
+.p-3 {
+    padding: 30px;
+}
+
+/* Flexbox */
+.flex {
+    display: flex;
+}
+.justify-center {
+    justify-content: center;
+}
+.items-center {
+    align-items: center;
+}
+
+/* Background and Color */
+.bg-black {
+    background-color: black;
+    color: white;
+}
+.bg-grey {
+    background-color: #121212;
+}
+.text-white {
+    color: white;
+}
+
+/* Text color utilities */
+.text-red {
+    color: red;
+}
+.text-blue {
+    color: blue;
+}
+.text-gray {
+    color: #888;
+}
+
+/* Image/Filter */
+.invert {
+    filter: invert(1);
+}
+
+/* Rounded borders */
+.rounded {
+    border-radius: 7px;
+}
+
+/* Width and Height */
+.w-full {
+    width: 100%;
+}
+.h-full {
+    height: 100%;
+}
+.w-100 {
+    width: 100px;
+}
+.h-100 {
+    height: 100px;
+}
+
+/* Text utilities */
+.text-center {
+    text-align: center;
+}
+.text-sm {
+    font-size: 0.875rem;
+}
+.text-lg {
+    font-size: 1.25rem;
+}
+.font-bold {
+    font-weight: bold;
+}
+
+/* Text Transformations */
+.uppercase {
+    text-transform: uppercase;
+}
+.lowercase {
+    text-transform: lowercase;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+
+/* Gap utilities */
+.gap-1 {
+    gap: 10px;
+}
+.gap-2 {
+    gap: 20px;
+}
+
+/* Hover effects */
+.hover-bg-grey {
+    background-color: #2a2a2a;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+.hover-pointer:hover {
+    cursor: pointer;
+}
+
+/* Visibility utilities */
+.hidden {
+    display: none;
+}
+
+/* Overflow utilities */
+.overflow-hidden {
+    overflow: hidden;
+}
+.overflow-scroll {
+    overflow: scroll;
+}
+
+/* Responsive helpers */
+@media (max-width: 768px) {
+    .hide-mobile {
+        display: none;
+    }
+    .text-sm-mobile {
+        font-size: 0.875rem;
+    }
+}
+
+/* Scrollbar Styling */
+body {
+    scrollbar-color: #333 #222;
+}
+
+/* Scrollbar (global) */
+.main-content::-webkit-scrollbar {
+    width: 12px;
+}
+.main-content::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 6px;
+}
+.main-content::-webkit-scrollbar-track {
+    background-color: #222;
+}
+
+/* Box Shadows */
+.shadow-sm {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.shadow-lg {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Transitions */
+.transition-all {
+    transition: all 0.3s ease;
+}
+.transition-bg {
+    transition: background-color 0.3s ease;
+}
+
+/* Grid Layout utilities */
+.grid {
+    display: grid;
+}
+.grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-gap-2 {
+    gap: 20px;
+} 

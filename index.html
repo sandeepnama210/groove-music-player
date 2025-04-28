@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensure paths are correct, assuming you might move them to the "public" folder for deployment -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Groove - Music Player: Life for everyone</title>
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="close">
+                <!-- Use relative path for images inside the img folder -->
+                <img width="30" class="invert" src="img/close.svg" alt="">
+            </div>
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo"><img width="150" src="img/logo.png" alt=""></div>
+                <ul>
+                    <li><img class="invert" src="img/home.svg" alt="home icon">Home</li>
+                    <li><img class="invert" src="img/search.svg" alt="search icon">Search</li>
+                </ul>
+            </div>
+
+            <!-- Songs in the folders -->
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <img class="invert" src="img/playlist.svg" alt="">
+                    <h2>Your Library</h2>
+                </div>
+
+                <!-- List of songs -->
+                <div class="songList">
+                    <div class="now-playing-title"></div>
+                    <ul></ul>
+                </div>
+
+                <!-- Footer -->
+                <div class="footer">
+                    <div><a href="#legal"><span>Legal</span></a></div>
+                    <div><a href="#privacy-center"><span>Privacy Center</span></a></div>
+                    <div><a href="#privacy-policy"><span>Privacy Policy</span></a></div>
+                    <div><a href="#cookies"><span>Cookies</span></a></div>
+                    <div><a href="#about-ads"><span>About Ads</span></a></div>
+                    <div><a href="#accessibility"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search bar -->
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="hamburgerContainer">
+                    <svg class="hamburger"></svg>
+                    <!-- Search bar -->
+                    <div class="search-container">
+                        <img src="img/search.svg" class="search-icon" alt="search">
+                        <input type="text" placeholder="What do you want to play?" class="search-input">
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="buttons">
+                    <span class="clickable-link">Premium</span>
+                    <span class="clickable-link">Download</span>
+                    <span class="clickable-link">Support</span>
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginbtn">Log in</button>
+                </div>
+            </div>
+
+            <!-- Groove Playlists -->
+            <div class="groovePlaylists">
+                <div class="main-content">
+                    <h1>Groove Playlists</h1>
+                    <div class="cardContainer">
+                    </div>
+
+                    <!-- Additional Links and Social Icons Section -->
+                    <div class="additional-links">
+                        <div class="links">
+                            <div class="column">
+                                <p class="link-heading">Company</p>
+                                <a href="#about">About</a>
+                                <a href="#jobs">Jobs</a>
+                                <a href="#for-the-record">For the Record</a>
+                            </div>
+
+                            <div class="column">
+                                <p class="link-heading">Communities</p>
+                                <a href="#for-artists">For Artists</a>
+                                <a href="#developers">Developers</a>
+                                <a href="#advertising">Advertising</a>
+                                <a href="#investors">Investors</a>
+                                <a href="#vendors">Vendors</a>
+                            </div>
+
+                            <div class="column">
+                                <p class="link-heading">Useful Links</p>
+                                <a href="#support">Support</a>
+                                <a href="#free-mobile-app">Free Mobile App</a>
+                            </div>
+
+                            <div class="column">
+                                <p class="link-heading">Groove Plans</p>
+                                <a href="#premium-individual">Premium Individual</a>
+                                <a href="#premium-duo">Premium Duo</a>
+                                <a href="#premium-family">Premium Family</a>
+                                <a href="#groove-free">Groove Free</a>
+                            </div>
+                        </div>
+
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                            </a>
+                            <a href="https://wa.me/" target="_blank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                            </a>
+                            <a href="https://twitter.com/" target="_blank">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter">
+                            </a>
+                        </div>
+                    </div>
+
+                    <hr class="divider">
+
+                    <!-- Footer of cards -->
+                    <footer class="foot">
+                        <p>© 2025 Groove AB</p>
+                    </footer>
+                </div>
+            </div>
+
+            <!-- Songs controls icons and volume -->
+            <div class="playbar">
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+
+                <div class="abovebar">
+                    <div class="songinfo"></div>
+                    <div class="songbuttons">
+                        <img width="35" id="previous" src="img/prevsong.svg" alt="">
+                        <img width="35" id="play" src="img/play.svg" alt="">
+                        <img width="35" id="next" src="img/nextsong.svg" alt="">
+                    </div>
+                    <div class="timevol">
+                        <div class="songtime"></div>
+                        <div class="volume">
+                            <img width="25" src="img/volume.svg" alt="">
+                            <div class="range">
+                                <input type="range" name="volume" id="volumecontrol">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
